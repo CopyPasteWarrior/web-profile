@@ -1,0 +1,64 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    color: white;
+    background-color: black;
+}
+nav{
+    display: flex;
+    gap: 50px;
+    margin-left: 25px;
+    margin-top: 10px;
+    border: 1px solid transparent;
+    height: 165px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+nav a:hover{
+    text-decoration: none;
+    color: orange;
+}
+.box{
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.box:hover{
+    color: orange;
+}
+.info{
+    transition: color 0.3s ease;
+}
+p:hover .info{
+    color: orange;
+}
+.me{
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+img{
+    width: 23%;
+    height: 475px;
+}
+.lang{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+hr{
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, black 25%, orange 50%, black 75%);
+
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right, black 25%, orange 50%, black 75%);
+    color: black;
+}
