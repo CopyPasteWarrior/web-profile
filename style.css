@@ -1,64 +1,171 @@
-html{
+html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     margin: 0;
     color: white;
-    background-color: black;
+    background-color: rgb(20, 20, 20);
 }
-nav{
+
+nav {
     display: flex;
     gap: 50px;
     margin-left: 25px;
     margin-top: 10px;
     border: 1px solid transparent;
-    height: 165px;
 }
-nav a{
-    text-decoration: none;
-    color: white;
-}
-nav a:hover{
-    text-decoration: none;
-    color: orange;
-}
-.box{
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-.box:hover{
-    color: orange;
-}
-.info{
-    transition: color 0.3s ease;
-}
-p:hover .info{
-    color: orange;
-}
-.me{
-    border: 1px solid transparent;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-img{
-    width: 23%;
-    height: 475px;
-}
-.lang{
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-hr{
-  border: none;
-  height: 2px;
-  background: linear-gradient(to right, black 25%, orange 50%, black 75%);
 
+nav a {
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.3s ease;
 }
-.footer{
+
+nav a:hover {
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0 8px 16px rgba(206, 4, 149, 0.5);
+}
+
+#about {
+    margin-top: 25px;
+    margin-left: 35px;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, rgb(20, 20, 20) 25%, violet 50%, rgb(20, 20, 20) 75%);
+}
+
+.about_me img {
+    margin-right: 25px;
+    /* Adjust the space between the text and the image */
+    box-shadow: 0 8px 16px rgba(136, 1, 97, 0.5);
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.info {
+    transition: color 0.3s ease;
+}
+
+p:hover .info {
+    color: rgb(219, 21, 219);
+}
+
+#likes {
+    margin-top: 25px;
+    margin-left: 35px;
+}
+
+.my_interests {
     display: flex;
     justify-content: center;
-    background-image: linear-gradient(to right, black 25%, orange 50%, black 75%);
-    color: black;
+    align-items: center;
+    background-color: rgb(20, 20, 20);
+}
+
+.con {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px 25px;
+    padding: 30px 10px;
+}
+
+.con .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 450px;
+    height: 350px;
+    background: rgb(20, 20, 20);
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(136, 1, 97, 0.5);
+    transition: 0.5s;
+    overflow: hidden; /* Ensures content doesn't spill out */
+}
+
+
+.con .card .img {
+    position: absolute;
+    top: 20px;
+    margin-left: 25px;
+    width: 400px;
+    height: 200px;
+    background: rgb(20, 20, 20);
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+
+
+.con .card .img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.con .card .cont {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.7); /* Optional: adds a background to the text */
+    color: white;
+    text-align: center;
+     /* Initially hidden */
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+
+.con .card .cont h2 {
+    font-size: larger;
+    font-weight: 400;
+}
+
+.con .card .cont p {
+    font-size: larger;
+    font-weight: 400;
+}
+
+#work {
+    margin-top: 25px;
+    margin-left: 35px;
+}
+
+.lamisa{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px 25px;
+    padding: 30px 10px;
+}
+.box img{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 630px;
+    height: 350px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 35px 80px black;
+    transition: 0.5s;
 }
