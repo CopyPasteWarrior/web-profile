@@ -7,42 +7,90 @@
     <link rel="icon" href="pfp.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="portfolio.css">
     <title>Personal Profile</title>
 </head>
 
 <body>
     <nav>
         <a href="#about">
-            <div class="box">About</div>
-        </a>
+            <div class="box">About</div></a>
         <a href="#likes">
-            <div class="box">Likes & Dislikes</div>
-        </a>
+            <div class="box">Interests</div></a>
+        <a href="#work">
+            <div class="box">Works</div></a>
     </nav>
-    <h1 id="about" style="margin-left: 35px;">About Me</h1>
-    <section class="me">
-        <p style="margin-left: 45px;">Hi, the name is <span class="info">Xavier Ace Clark Salazar Azcona </span>currently a 3rd year student taking the course<br>
-            of Bachelor of Science in Information Technology in Northwestern Mindanao state collage.<br>
-            A 23 years old male standing at <span class="info">170cm</span> and wieghs <span class="info">50kg </span>often lazy and loafing<br>
-            around but when it's time to lock in I still loaf around.<br><br>
-            Born in the place of Cagayan de Oro Misamis Oriental on the month, day, and year of april 22, 2001 sunday.<br>
-            Currently living in Oroquieta City Misamis Occidental with my father the son of Gelio Azcona named<br>
-            <span class="info">Lain Azcona</span> who wed my mother the daughter of Ajing Salazar named <span class="info">Shelo Salazar</span>.<br><br>
-            <i>"I am the truth-teller who lies but would you believe so?"</i><br>
-            <i>~ Ace 2019</i>
-        </p>
-        <img src="ace.png" alt="image">
+    
+    <h2 id="about">My View</h2>
+    <hr>
+    <section class="about_me">
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+            <p style="margin-left: 50px;">Hi, the name is <span class="info">Xavier Ace Clark Salazar Azcona </span>currently a 3rd year student taking the course<br>
+                of Bachelor of Science in Information Technology in Northwestern Mindanao state college.<br>
+                A 23 years old male standing at <span class="info">170cm</span> and wieghs <span class="info">50kg </span>often lazy and loafing<br>
+                around but when it's time to lock in I still loaf around.<br><br>
+                Born in the place of Cagayan de Oro Misamis Oriental on the month, day, and year of april 22, 2001 sunday.<br>
+                Currently living in Oroquieta City Misamis Occidental with my father the son of Gelio Azcona named<br>
+                <span class="info">Lain Azcona</span> who wed my mother the daughter of Ajing Salazar named <span class="info">Shelo Salazar</span>.<br><br>
+                <i>"I am the truth-teller who lies but would you believe so?"</i><br>
+                <i>~ Ace 2019</i>
+            </p>
+            <img src="ace.png" alt="Ace's Picture" style="max-width: 250px; height: auto;">
+        </div>
     </section>
-    <div class="footer">
-        <p>&copy; 2024 Personal Profile. All rights reserved.</p>
-    </div>
+    <h2 id="likes">Interests</h2>
+    <hr>
+    <section class="my_interests">
+        <div class="con">
+            <div class="card">
+                <div class="img"><img src="ball.jpg"></div>
+                <div class="cont">
+                    <i><h2 style="color: rgb(255, 255, 255);">Playing basketball</h2></i>
+                    <p>In all the sports of the world that I could be playing or I could be practicing I ended up with <br>
+                    basketball, a common sport for men known for its agility, strength, speed, decision making, field vision and most of all <br>
+                height, I play the positions power forward or center.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img"><img src="game.jpg"></div>
+                <div class="cont">
+                    <i><h2 style="color: rgb(255, 255, 255);">Enjoying video games</h2></i>
+                    <p>Despite growing up as a kid who plays outside with peers and cousins I fell into a deep pit named <br>
+                    video games, discovering video games turned me into an awkward shut in. I enjoy playing RPG/MMORPG namely Inotia 1 to 4,<br>
+                Zenonia 1 to 4, Torchlight, Defence of the Ancients, Devil may cry 1 to 5 and many more.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img"><img src="music.png"></div>
+                <div class="cont">
+                    <i><h2 style="color: rgb(255, 255, 255);">Listening to music</h2></i>
+                    <p>Music, yes it is a daily basis for me I think there is no day I'll not listen to music, it's like an auto system in me <br>
+                    Im into heavy metal because It just wakes up the primal instincts in me, going all ballistic and crazy, looking at my face <br>
+                you'll have a hard time guesing my taste in music.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <h2 id="work">Works</h2>
+    <hr>
+    <section class="my_works">
+        <div class="lamisa">
+            <div class="box">
+                <img src="nonalmanac.png">
+                <a href="https://nonalmanac.bytevortexz.com/login.html">
+                    <p>Non-Almanac</p></a><p>My 1st full stack web development during my 2nd year in college,<br>
+                        it was fun until my instructor failed me, I guess that is + 1 year.</p>
+            </div>
+            <div class="box">
+                <img src="elementarystudentportal.png">
+                <p><br></p>
+                <p>Bright Future Academy, a web base student portal for elementary students which is currently<br>
+                under development, it is also serves as my final exam in ADV. WEB under Ma'am Bation.</p>
+            </div>
+        </div>    
+    </section>
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-
 </html>
-<!--https://printwarrior.github.io/ITP4midterm.github.io/-->
-<!--https://nonalmanac.bytevortexz.com/login.html-->
