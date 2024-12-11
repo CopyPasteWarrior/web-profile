@@ -21,7 +21,7 @@
             <div class="box">Works</div></a>
     </nav>
     
-    <h2 id="about">My View</h2>
+    <h2 id="about">About Me</h2>
     <hr>
     <section class="about_me">
         <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
@@ -90,21 +90,32 @@
         </div>    
     </section>
 <hr>
-    <section class="form">
-<h2>Contact Me</h2>
-    <form action="https://formspree.io/f/xpwzeopj" method="POST">
-        <label>
-            Your email:
-            <input type="email" name="email">
-        </label>
-        <label>
-            Your message:
-            <textarea name="message"></textarea>
-        </label>
-        <button type="submit">Send</button>
+<h2 style="text-align: center;">Contact Me</h2>
+<section class="form">
+    <form action="submit.php" method="POST">
+      <label for="firstname">First Name:</label>
+      <input type="text" id="firstname" name="firstname" required>
+  
+      <label for="lastname">Last Name:</label>
+      <input type="text" id="lastname" name="lastname" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+  
+      <button type="submit">Submit</button>
     </form>
-    </section>
+  </section>
+    <footer class="site-footer">
+        <div class="footer-container">
+          <div class="footer-section">
+            <p>© Xavier Ace Clark Salazar Azcona 2024 Web Development</p>
+          </div>
+      </footer>
 </body>
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
